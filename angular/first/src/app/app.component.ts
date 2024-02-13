@@ -132,6 +132,8 @@ export class AppComponent {
     this.count = 0;
     this.clickcount++;
     this.checkEvenOdd();
+    this.checkdisabledNot();
+    this.checkzero();
 
   }
 
