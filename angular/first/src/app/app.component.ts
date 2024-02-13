@@ -46,7 +46,7 @@ export class AppComponent {
 
   checkzero()
   {
-    if(this.count > 0)
+    if(this.count >= 0)
     {
       this.isCountzero = false;
     }
