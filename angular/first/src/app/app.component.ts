@@ -14,7 +14,7 @@ export class AppComponent {
 
   clickcount:number = 0;
 
-  isEven  = "ODD";
+  isEven  = "0";
 
   checkEvenOdd()
   {
@@ -133,7 +133,7 @@ export class AppComponent {
   {
 
     this.count = 0;
-    this.clickcount++;
+    this.clickcount = 0;
     this.checkEvenOdd();
     this.checkdisabledNot();
     this.checkzero();
