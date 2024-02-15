@@ -1,0 +1,34 @@
+.site-footer
+{
+    background-color: rgb(25, 25, 97);
+    height: 350px;
+}
+.innermain
+{
+    padding: 20px;
+}
+.cretedukan
+{
+    color: rgb(223, 85, 165);
+    font-size: larger;
+    font-weight: 800;
+}
+.cretedukan a
+{
+    color: rgb(252, 80, 180);
+}
+.firstline
+{
+display: flex;
+justify-content: space-between;
+}
+.images
+{
+   
+    width: 200px;
+    
+}
+.media-icon{
+    
+    margin: 10px;
+}

@@ -1,0 +1,55 @@
+body
+{
+   
+    height: 110px;
+    
+}
+
+.innerbody
+{
+
+    background-color: rgb(25, 25, 97);
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+}
+
+.img{
+    padding-left: 20px;
+}
+.img img
+{
+    height: 60px;
+    transition: transform .4s;
+}
+.img img:hover
+{
+    transform: scale(1.2);
+}
+
+.options
+{
+    
+    width: 500px;
+    
+}
+.nav
+{
+    gap: 50px;
+    font:bolder;
+    font-size: 25px;    
+}
+.nav-item a
+{
+    color: white;
+    transition: transform .4s;
+}
+.options a:hover
+{
+    color: rgb(231, 219, 219);
+    transform: scale(1.2);
+    
+}
