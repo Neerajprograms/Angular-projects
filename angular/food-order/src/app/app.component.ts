@@ -7,54 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'food-order';
-  
 
-  tiffinitems = [
-  {
-    itemtitle: 'Dosa',
-    url: '',
-    price: '₹40',
-  },
-  {
+  Tiffins = "Tiffins";
 
-    itemtitle: 'Vada',
-    url: '',
-    price: '₹40',
+  Nonveg = "NoN-Veg";
 
-  },
+  streetfood = "street food";
 
-  {
+  chinesefood = "chinese food";
 
-    itemtitle: 'Idly',
-    url: '',
-    price: '₹40',
+  Icecrem = "Ice Creams";
 
-  },
-
-  {
-
-    itemtitle: 'Utappam',
-    url: '',
-    price: '₹40',
-
-  },
-
-  {
-
-    itemtitle: 'Setdhosa',
-    url: '',
-    price: '₹50',
-
-  },
-
-  {
-
-    itemtitle: 'plan Dosa',
-    url: '',
-    price: '₹30',
-
-  }
-];
+ 
 }
-
-console.log(AppComponent)
