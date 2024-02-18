@@ -193,7 +193,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.DarkIceTitle} ; quantity :: ${this.count1} , Total RS :: ${this.count1 * 40}`);
+    alert(`Your Order added, Your Item :: ${this.DarkIceTitle} ; quantity :: ${this.count1} , Total RS :: ${this.count1 * 70}`);
 
     this.itemsselect++;
 
@@ -214,7 +214,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.WhiteTitle} ; quantity :: ${this.count2} ; Total RS :: ${this.count2 * 40}`);
+    alert(`Your Order added, Your Item :: ${this.WhiteTitle} ; quantity :: ${this.count2} ; Total RS :: ${this.count2 * 80}`);
 
     this.itemsselect++;
 
@@ -235,7 +235,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.RainBowTitle} ; quantity :: ${this.count3} ; Total RS :: ${this.count3 * 50}`);
+    alert(`Your Order added, Your Item :: ${this.RainBowTitle} ; quantity :: ${this.count3} ; Total RS :: ${this.count3 * 130}`);
 
     this.itemsselect++;
 
@@ -254,7 +254,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.ConeTitle} ; quantity :: ${this.count4} ; Total RS :: ${this.count4 * 30}`);
+    alert(`Your Order added, Your Item :: ${this.ConeTitle} ; quantity :: ${this.count4} ; Total RS :: ${this.count4 * 40}`);
 
     this.itemsselect++;
 
@@ -272,7 +272,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.StrawberryTitle} ; quantity :: ${this.count5} ; Total RS :: ${this.count5 * 15}`);
+    alert(`Your Order added, Your Item :: ${this.StrawberryTitle} ; quantity :: ${this.count5} ; Total RS :: ${this.count5 * 60}`);
 
     this.itemsselect++;
 
@@ -291,7 +291,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.MangoTitle} ; quantity :: ${this.count6} ; Total RS :: ${this.count6 * 40}`);
+    alert(`Your Order added, Your Item :: ${this.MangoTitle} ; quantity :: ${this.count6} ; Total RS :: ${this.count6 * 85}`);
 
     this.itemsselect++;
 
@@ -310,7 +310,7 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ::  ${this.PistaTitle} ; quantity :: ${this.count7} ; Total RS :: ${this.count7 * 55}`);
+    alert(`Your Order added, Your Item ::  ${this.PistaTitle} ; quantity :: ${this.count7} ; Total RS :: ${this.count7 * 85}`);
 
     this.itemsselect++;
 

@@ -276,7 +276,7 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.TEA} quantity : ${this.count5} Total RS ${this.count5 * 15}`);
+    alert(`Your Order added, Your Item ${this.TEATITLE} quantity : ${this.count5} Total RS ${this.count5 * 15}`);
 
     this.itemsselect++;
 

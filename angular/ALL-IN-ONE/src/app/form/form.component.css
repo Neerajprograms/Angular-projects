@@ -1,0 +1,126 @@
+body
+{
+    border-radius: 20px;
+
+}
+.counter
+{
+    height: 72vh;
+    width: 108.5vh;
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3c1f3;    
+    
+}
+h1
+{
+    padding-bottom: 40px;
+}
+.innercounter
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vh;
+    height: 50vh;
+    
+}
+.clicks-type
+{
+    
+    height: 50px;
+    width: 250px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clicks
+{
+
+    border: 1px solid;
+    width: 60px;
+    height: 40px;
+    background-color: azure;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 9px;
+}
+
+.types
+{
+    border: 1px solid;
+    width: 60px;
+    height: 40px;
+    background-color: azure;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 9px;
+    
+}
+
+.typechangeodd
+{
+    border: 1px solid;
+    width: 60px;
+    height: 40px;
+    background-color: azure;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 9px;
+    color: rgb(0, 216, 72);
+}
+
+.totalouter
+{
+    
+    height: 50px;
+    width: 250px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.totalinner
+{
+    border: 1px solid;
+    width: 60px;
+    height: 40px;
+    background-color: azure;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 7px 10px;
+}
+
+.buttuns
+{
+    
+    padding-top: 80px;
+
+}
+button
+{
+
+    border-radius: 50%;
+
+}
+
+button:disabled
+{
+    background-color: red;
+    color: white;
+}

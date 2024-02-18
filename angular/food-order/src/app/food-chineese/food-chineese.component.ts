@@ -9,7 +9,7 @@ export class FoodChineeseComponent {
 
 
   Nooddils = "https://lh3.googleusercontent.com/ITIyOJfAaqffW8EDCwf-96w67YH0nHJIAy9pkymZoHwT0okZj3KYG9yNUZ-BEMGgFV1koIil2hoU5VPIxXgmvfqKZOCl7OPL3VcATLWd6w=w150-rw";
-  NooddilsTitle = "Nooddils";
+  NooddilsTitle = "Hakka Noodles";
   Price1 = "₹90";
 
   
@@ -24,11 +24,11 @@ export class FoodChineeseComponent {
 
 
   ChineseNooddils = "https://media.istockphoto.com/id/935986200/photo/chinese-noodles-wok-isolated-in-white-background.jpg?s=612x612&w=0&k=20&c=Hiff4n0HEADjwBdId0IlsJfNWpyLQTv4aXaNcpJpnC0="
-  ChineseNooddilsTitle = "Chinese Nooddils";
+  ChineseNooddilsTitle = "Chinese Noodles";
   Price4 = "₹130";
 
   ChilliGarlicNooddles = "https://media.istockphoto.com/id/1252605665/photo/chilli-garlic-hakka-noodles-in-black-bowl-isolated-on-white-background-indo-chinese.jpg?s=612x612&w=0&k=20&c=lesS8Wt5JVauAqjVh9uPfoiGr1ZjsnjHWZyKw3zLg2E="
-  ChilliGarlicNooddlesTitle = "Chilli Garlic Nooddles"
+  ChilliGarlicNooddlesTitle = "Chilli Garlic Noodles"
   Price5 = "₹150"
   
 
