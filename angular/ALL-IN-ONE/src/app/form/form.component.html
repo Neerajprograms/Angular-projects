@@ -18,11 +18,18 @@
 
   <body>
     <div class="counter">
-      <strong><h1>Counter</h1></strong>
+      <strong><h1 class="text-white">Counter</h1></strong>
       <div class="innercounter">
+        <div class="typetitle">
+          <div class="clickstitle">No Clicks</div>
+          <div class="typestitle">Type</div>
+          <div class="typestitle">Prime OR Not</div>
+        </div>
+
         <div class="clicks-type">
           <div class="clicks">{{ clickcount }}</div>
           <div class="types">{{ isEven }}</div>
+          <div class="types">{{ isprime }}</div>
         </div>
 
         <div class="totalouter">
@@ -31,21 +38,21 @@
 
         <div class="buttuns">
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-success m-3"
             [disabled]="isCountmore"
             (click)="twoadd()"
           >
             +2
           </button>
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-success m-3"
             [disabled]="isCountmore"
             (click)="fiveadd()"
           >
             +5
           </button>
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-success m-3"
             [disabled]="isCountmore"
             (click)="eight()"
           >
@@ -53,28 +60,28 @@
           </button>
           <br />
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-warning m-3"
             [disabled]="isCountzero"
             (click)="tworemove()"
           >
             -2
           </button>
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-warning m-3"
             [disabled]="isCountzero"
             (click)="fivemove()"
           >
             -5
           </button>
           <button
-            class="btn btn-outline-primary m-3"
+            class="btn btn-warning m-3"
             [disabled]="isCountzero"
             (click)="eightremove()"
           >
             -8
           </button>
         </div>
-        <div class="reset btn btn-outline-danger" (click)="reset()">Reset</div>
+        <div class="reset btn btn-danger" (click)="reset()">Reset</div>
       </div>
     </div>
 

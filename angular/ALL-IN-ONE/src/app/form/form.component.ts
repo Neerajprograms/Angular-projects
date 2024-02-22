@@ -18,9 +18,11 @@ export class FormComponent {
 
   isEven  = "0";
 
+  isprime = "0";
+
   checkEvenOdd()
   {
-    if(this.count%2 === 0 )
+    if(this.count%2 === 0)
     {
       
       this.isEven = "EVEN";
@@ -32,6 +34,25 @@ export class FormComponent {
     }
 
   }
+
+  checkprim():void
+  {
+    if (this.count <= 1) {
+      this.isprime = "Not Prime"; // Numbers less than or equal to 1 are not prime
+      return;
+    }
+    let isPrime: boolean = true;
+    for (let i = 2; i <= Math.sqrt(this.count); i++) {
+      if (this.count % i === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    this.isprime = isPrime ? "Prime" : "Not Prime";
+  }
+
+
+
 
 
   checkdisabledNot()
@@ -88,6 +109,7 @@ export class FormComponent {
       this.checkEvenOdd();  
       this.checkdisabledNot();
       this.checkzero();
+      this.checkprim()
     }
     
   }
@@ -109,6 +131,7 @@ export class FormComponent {
       this.checkEvenOdd();
       this.checkdisabledNot();  
       this.checkzero();
+      this.checkprim()
     }
   }
 
@@ -129,6 +152,7 @@ export class FormComponent {
       this.checkEvenOdd();
       this.checkdisabledNot();
       this.checkzero();
+      this.checkprim()
     }
 
   }
@@ -141,6 +165,7 @@ export class FormComponent {
     this.checkEvenOdd();
     this.checkdisabledNot();
     this.checkzero();
+    this.checkprim()
 
   }
 
@@ -159,6 +184,7 @@ export class FormComponent {
       this.checkEvenOdd();
       this.checkdisabledNot();
       this.checkzero();
+      this.checkprim()
     }
     
 
@@ -178,6 +204,7 @@ export class FormComponent {
       this.checkEvenOdd();
       this.checkdisabledNot();
       this.checkzero();
+      this.checkprim()
     }
 
   }
@@ -195,6 +222,7 @@ export class FormComponent {
       this.checkEvenOdd();
       this.checkdisabledNot();
       this.checkzero();
+      this.checkprim()
     }
 
 

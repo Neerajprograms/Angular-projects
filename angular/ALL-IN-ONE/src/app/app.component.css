@@ -5,8 +5,10 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-}
+    background-image: url(https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 1400px
+  }
 
 .maincontentshow
 {
@@ -40,7 +42,7 @@ button
 display: flex;
 align-items: center;
 height: 265px;
-background-color: bisque;
+background-color: rgb(247, 237, 107);
 border-radius: 0px 0px 20px 20px;
 }
 

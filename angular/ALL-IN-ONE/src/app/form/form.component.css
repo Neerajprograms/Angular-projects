@@ -5,7 +5,7 @@ body
 }
 .counter
 {
-    height: 72vh;
+    height: 73vh;
     width: 108.5vh;
     text-align: center;
     display: flex;
@@ -13,8 +13,10 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f3c1f3;    
-    
+    /* background-color: #f3c1f3;     */
+    background-image: url(https://images.pexels.com/photos/39574/flower-exotic-colorful-pink-39574.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 750px;
 }
 h1
 {
@@ -109,7 +111,7 @@ h1
 .buttuns
 {
     
-    padding-top: 80px;
+    padding-top: 55px;
 
 }
 button
@@ -123,4 +125,17 @@ button:disabled
 {
     background-color: red;
     color: white;
+}
+
+.typetitle
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 300px;
+}
+.typetitle{
+    color: white;
+    font-weight: bolder;
+
 }

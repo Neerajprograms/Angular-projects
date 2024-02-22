@@ -4,7 +4,7 @@ body{
 .mainbody
 {
     height: 200px;
-    background-color: rgb(235, 160, 241);
+     background-color: rgb(228, 181, 228); 
     display: flex;
     border-radius: 20px 20px 0px 0px;
 }
