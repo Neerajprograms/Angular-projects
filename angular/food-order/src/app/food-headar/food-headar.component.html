@@ -3,6 +3,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="mainbody"  id="upper">
@@ -20,7 +22,7 @@
         </div>
 
         <div class="options d-flex g-4">
-          <ul class="nav navbar-brand">
+          <ul class="nav navbar">
             <li class="nav-item">
               <a href="#" class="nav-link "
                 >About</a
@@ -32,19 +34,43 @@
               >
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"
+              <a href="#" class="nav-link" id="navbarDropdown"
                 >Items</a
               >
+              <ul class="subitems">
+                
+                <li class="subitemsinner"><a href="#Tiffins">Tiffins</a></li>
+                <li class="subitemsinner"><a href="#Biryanis">NoN-Veg</a></li>
+                <li class="subitemsinner"><a href="#chinesefood">Chinese food</a></li>
+                <li class="subitemsinner"><a href="#icecream">Ice Creams</a></li>
+
+              </ul>
             </li>
           </ul>
+
+
           <div class="imagefororder">
             <img class="position-relative" src="https://png.pngtree.com/png-clipart/20220823/original/pngtree-cooking-logo-png-image_8466882.png" alt="">
-            <a href="#"><span class="text-warning text-decoration-none position-absolute top-0">0</span></a>
+            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" href="#offcanvasExample" aria-controls="offcanvasScrolling"><span class="text-warning text-decoration-none position-absolute top-0">0</span></a>
+          </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Orderd Items</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
           </div>
         </div>
 
 
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    
   </body>
 </html>

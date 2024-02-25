@@ -26,13 +26,65 @@
                 +
               </button>
             </div>
-
-          </div><br>
+          </div>
+          <br />
           <div class="order">
-            <button class="btn btn-outline-primary" (click)="add1()">ADD</button>
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#HakkaNoodles"
+              (click)="add1()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="HakkaNoodles"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ NooddilsTitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-<!----------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------->
         <div class="item">
           <img src="{{ Fries }}" alt="" />
           <br />
@@ -51,12 +103,65 @@
                 +
               </button>
             </div>
-          </div><br>
+          </div>
+          <br />
           <div class="order">
-            <button class="btn btn-outline-primary" (click)="add2()">ADD</button>
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#Fries"
+              (click)="add2()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Fries"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ Friestitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-<!------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------>
 
         <div class="item">
           <img src="{{ Pasta }}" alt="" />
@@ -77,12 +182,64 @@
                 +
               </button>
             </div>
-        </div><br>
-        <div class="order">
-        <button class="btn btn-outline-primary" (click)="add3()">ADD</button>
-      </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#Pasta"
+              (click)="add3()"
+            >
+              ADD
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Pasta"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ Pastatitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-<!------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------->
         <div class="item">
           <img class="bigimgs" src="{{ ChineseNooddils }}" alt="" />
           <br />
@@ -102,12 +259,65 @@
                 +
               </button>
             </div>
-        </div><br>
-        <div class="order">
-          <button class="btn btn-outline-primary" (click)="add4()">ADD</button>
-      </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ChineseNoodles"
+              (click)="add4()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="ChineseNoodles"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ ChineseNooddilsTitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-<!------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------>
         <div class="item">
           <img class="bigimgs" src="{{ ChilliGarlicNooddles }}" alt="" />
           <br />
@@ -127,12 +337,65 @@
                 +
               </button>
             </div>
-        </div><br>
-        <div class="order">
-          <button class="btn btn-outline-primary" (click)="add5()">ADD</button>
-      </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ChilliGarlicNoodles"
+              (click)="add5()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="ChilliGarlicNoodles"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ ChilliGarlicNooddlesTitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-<!-------------------------------------------------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------->
         <div class="item">
           <img class="bigimgs" src="{{ shrimpscampi }}" alt="" />
           <br />
@@ -152,12 +415,65 @@
                 +
               </button>
             </div>
-        </div><br>
-        <div class="order">
-          <button class="btn btn-outline-primary" (click)="add6()">ADD</button>
-      </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ShrimpScampi"
+              (click)="add6()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="ShrimpScampi"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ shrimpscampiTitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-<!----------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------------->
         <div class="item">
           <img class="bigimgs" src="{{ DuckFry }}" alt="" />
           <br />
@@ -177,15 +493,68 @@
                 +
               </button>
             </div>
-        </div><br>
-        <div class="order">
-          <button class="btn btn-outline-primary" (click)="add7()">ADD</button>
-      </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#DuckFry"
+              (click)="add7()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="DuckFry"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span>
+                    <span>{{ DuckFryTitle }}</span>
+                    <br />
+                    <span>Quantity :: </span> <span>{{ iteamcount }}</span>
+                    <br />
+                    <span>Total RS :: </span> <span>{{ total }}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
 
-
-
-
+        
       </div>
     </div>
   </body>

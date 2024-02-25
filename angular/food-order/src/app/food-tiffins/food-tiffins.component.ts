@@ -44,6 +44,8 @@ export class FoodTiffinsComponent {
 
   plaindosatitle = "Plain Dosa"
 
+  Total = 0;
+
   count1 = 0;
   count2 = 0;
   count3 = 0;
@@ -52,7 +54,9 @@ export class FoodTiffinsComponent {
   count6 = 0;
   count7 = 0;
 
-  iteamcount!:any;
+  iteamcount = 0;
+
+  additem = true;
 
   decr1()
   {
@@ -192,18 +196,27 @@ export class FoodTiffinsComponent {
 
     if(this.count1==0)
     {
-
+      
     }
     else
     {
     
-    alert(`Your Order added, Your Item ${this.dosatitle} quantity : ${this.count1} Total RS ${this.count1 * 40}`);
+    // alert(`Your Order added, Your Item ${this.dosatitle} quantity : ${this.count1} Total RS ${this.count1 * 40}`);
+
+    this.additem = true;
 
     this.itemsselect++;
 
     this.iteamcount = this.count1;  
 
+    this.Total = this.count1*40;
+
     this.count1 = 0;
+
+    this.iteamcount = 0;
+    
+    this.Total = 0;
+    
     }
     
   }
@@ -218,11 +231,13 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.samosatitle} quantity : ${this.count2} Total RS ${this.count2 * 40}`);
+    // alert(`Your Order added, Your Item ${this.samosatitle} quantity : ${this.count2} Total RS ${this.count2 * 40}`);
 
     this.itemsselect++;
 
-    
+    this.iteamcount = this.count2;  
+
+    this.Total = this.count2*40;    
 
     this.count2 = 0;
 
@@ -239,9 +254,13 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.purititle} quantity : ${this.count3} Total RS ${this.count3 * 50}`);
+    // alert(`Your Order added, Your Item ${this.purititle} quantity : ${this.count3} Total RS ${this.count3 * 50}`);
 
     this.itemsselect++;
+
+    this.iteamcount = this.count3;  
+
+    this.Total = this.count3*50;
 
     this.count3 = 0;
 
@@ -258,9 +277,13 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.IDLITITLE} quantity : ${this.count4} Total RS ${this.count4 * 30}`);
+    // alert(`Your Order added, Your Item ${this.IDLITITLE} quantity : ${this.count4} Total RS ${this.count4 * 30}`);
 
     this.itemsselect++;
+
+    this.iteamcount = this.count4;  
+
+    this.Total = this.count4*30;
 
     this.count4 = 0;
 
@@ -276,9 +299,12 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.TEATITLE} quantity : ${this.count5} Total RS ${this.count5 * 15}`);
+    // alert(`Your Order added, Your Item ${this.TEATITLE} quantity : ${this.count5} Total RS ${this.count5 * 15}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count5;  
+
+    this.Total = this.count5*15;
 
     this.count5 = 0;
 
@@ -295,9 +321,13 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.plaindosatitle} quantity : ${this.count6} Total RS ${this.count6 * 40}`);
+    // alert(`Your Order added, Your Item ${this.plaindosatitle} quantity : ${this.count6} Total RS ${this.count6 * 40}`);
 
     this.itemsselect++;
+
+    this.iteamcount = this.count6;  
+
+    this.Total = this.count6*40;
 
     this.count6 = 0;
 
@@ -314,9 +344,13 @@ export class FoodTiffinsComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ${this.SandwichTitle} quantity : ${this.count7} Total RS ${this.count7 * 55}`);
+    // alert(`Your Order added, Your Item ${this.SandwichTitle} quantity : ${this.count7} Total RS ${this.count7 * 55}`);
 
     this.itemsselect++;
+
+    this.iteamcount = this.count7;  
+
+    this.Total = this.count7*55;
 
     this.count7 = 0;
 

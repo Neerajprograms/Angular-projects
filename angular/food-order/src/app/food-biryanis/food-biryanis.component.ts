@@ -9,7 +9,7 @@ export class FoodBiryanisComponent {
 
   imgdosa = "https://lh3.googleusercontent.com/P5z0XqPUsaf9bOHisBBOY8smg1JHzLDX7SzA92pc6Cwtbp0o96xIXxRL862sG6hUjsTjLkPWCZse-ceDu-Yz-nHWpqhLXQbaE3mOpV-S=w150-rw"
 
-  dosatitle = "Chicken Biryani";
+  biryanititle = "Chicken Biryani";
 
   priceD = "₹240";
 
@@ -52,7 +52,9 @@ export class FoodBiryanisComponent {
   count6 = 0;
   count7 = 0;
 
-  iteamcount!:any;
+  total = 0;
+
+  iteamcount = 0 ;
 
   decr1()
   {
@@ -197,11 +199,13 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.dosatitle} quantity :: ${this.count1} Total RS :: ${this.count1 * 240}`);
+    // alert(`Your Order added, Your Item :: ${this.biryanititle} quantity :: ${this.count1} Total RS :: ${this.count1 * 240}`);
 
     this.itemsselect++;
 
-    this.iteamcount = this.count1;  
+    this.iteamcount = this.count1;
+
+    this.total = this.count1 * 240;
 
     this.count1 = 0;
     }
@@ -218,11 +222,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.samosatitle} quantity :: ${this.count2} Total RS :: ${this.count2 * 140}`);
+    // alert(`Your Order added, Your Item :: ${this.samosatitle} quantity :: ${this.count2} Total RS :: ${this.count2 * 140}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count2;
 
-    
+    this.total = this.count2*140;  
 
     this.count2 = 0;
 
@@ -239,9 +244,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.purititle} quantity :: ${this.count3} Total RS :: ${this.count3 * 250}`);
+    // alert(`Your Order added, Your Item :: ${this.purititle} quantity :: ${this.count3} Total RS :: ${this.count3 * 250}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count3;
+
+    this.total = this.count3*250;
 
     this.count3 = 0;
 
@@ -258,9 +266,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.IDLITITLE} quantity :: ${this.count4} Total RS :: ${this.count4 * 130}`);
+    // alert(`Your Order added, Your Item :: ${this.IDLITITLE} quantity :: ${this.count4} Total RS :: ${this.count4 * 130}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count4;
+
+    this.total = this.count4*130;
 
     this.count4 = 0;
 
@@ -276,9 +287,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.TEA} quantity :: ${this.count5} Total RS :: ${this.count5 * 159}`);
+    // alert(`Your Order added, Your Item :: ${this.TEA} quantity :: ${this.count5} Total RS :: ${this.count5 * 159}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count5;
+
+    this.total = this.count5*159;
 
     this.count5 = 0;
 
@@ -295,9 +309,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.Fishtitle} quantity :: ${this.count6} Total RS :: ${this.count6 * 145}`);
+    // alert(`Your Order added, Your Item :: ${this.Fishtitle} quantity :: ${this.count6} Total RS :: ${this.count6 * 145}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count6;
+
+    this.total = this.count6*145;
 
     this.count6 = 0;
 
@@ -314,9 +331,12 @@ export class FoodBiryanisComponent {
     else
     {
     
-    alert(`Your Order added, Your Item  :: ${this.SandwichTitle} quantity :: ${this.count7} Total RS :: ${this.count7 * 95}`);
+    // alert(`Your Order added, Your Item  :: ${this.SandwichTitle} quantity :: ${this.count7} Total RS :: ${this.count7 * 95}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count7;
+
+    this.total = this.count7*95;
 
     this.count7 = 0;
 

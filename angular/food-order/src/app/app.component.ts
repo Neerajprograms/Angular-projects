@@ -14,7 +14,7 @@ export class AppComponent {
 
   streetfood = "street food";
 
-  chinesefood = "chinese food";
+  chinesefood = "Chinese food";
 
   Icecrem = "Ice Creams";
 

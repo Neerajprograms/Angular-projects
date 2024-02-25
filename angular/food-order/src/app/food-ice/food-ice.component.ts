@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-food-ice',
   templateUrl: './food-ice.component.html',
@@ -48,7 +49,9 @@ export class FoodIceComponent {
   count6 = 0;
   count7 = 0;
 
-  iteamcount!:any;
+  iteamcount = 0;
+
+  total = 0;
 
   decr1()
   {
@@ -193,11 +196,12 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.DarkIceTitle} ; quantity :: ${this.count1} , Total RS :: ${this.count1 * 70}`);
+    // alert(`Your Order added, Your Item :: ${this.DarkIceTitle} ; quantity :: ${this.count1} , Total RS :: ${this.count1 * 70}`);
 
     this.itemsselect++;
 
-    this.iteamcount = this.count1;  
+    this.iteamcount = this.count1;
+    this.total = this.count1*70;
 
     this.count1 = 0;
     }
@@ -214,12 +218,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.WhiteTitle} ; quantity :: ${this.count2} ; Total RS :: ${this.count2 * 80}`);
+    // alert(`Your Order added, Your Item :: ${this.WhiteTitle} ; quantity :: ${this.count2} ; Total RS :: ${this.count2 * 80}`);
 
     this.itemsselect++;
-
-    
-
+    this.iteamcount = this.count2;
+    this.total = this.count2*80;
     this.count2 = 0;
 
     }
@@ -235,10 +238,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.RainBowTitle} ; quantity :: ${this.count3} ; Total RS :: ${this.count3 * 130}`);
+    // alert(`Your Order added, Your Item :: ${this.RainBowTitle} ; quantity :: ${this.count3} ; Total RS :: ${this.count3 * 130}`);
 
     this.itemsselect++;
-
+    this.iteamcount = this.count3;
+    this.total = this.count3*130;
     this.count3 = 0;
 
     }
@@ -254,10 +258,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.ConeTitle} ; quantity :: ${this.count4} ; Total RS :: ${this.count4 * 40}`);
+    // alert(`Your Order added, Your Item :: ${this.ConeTitle} ; quantity :: ${this.count4} ; Total RS :: ${this.count4 * 40}`);
 
     this.itemsselect++;
-
+    this.iteamcount = this.count4;
+    this.total = this.count4*40;
     this.count4 = 0;
 
     }
@@ -272,10 +277,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.StrawberryTitle} ; quantity :: ${this.count5} ; Total RS :: ${this.count5 * 60}`);
+    // alert(`Your Order added, Your Item :: ${this.StrawberryTitle} ; quantity :: ${this.count5} ; Total RS :: ${this.count5 * 60}`);
 
     this.itemsselect++;
-
+    this.iteamcount = this.count5;
+    this.total = this.count5*60;
     this.count5 = 0;
 
     }
@@ -291,10 +297,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item :: ${this.MangoTitle} ; quantity :: ${this.count6} ; Total RS :: ${this.count6 * 85}`);
+    // alert(`Your Order added, Your Item :: ${this.MangoTitle} ; quantity :: ${this.count6} ; Total RS :: ${this.count6 * 85}`);
 
     this.itemsselect++;
-
+    this.iteamcount = this.count6;
+    this.total = this.count6*85;
     this.count6 = 0;
 
     }
@@ -310,9 +317,11 @@ export class FoodIceComponent {
     else
     {
     
-    alert(`Your Order added, Your Item ::  ${this.PistaTitle} ; quantity :: ${this.count7} ; Total RS :: ${this.count7 * 85}`);
+    // alert(`Your Order added, Your Item ::  ${this.PistaTitle} ; quantity :: ${this.count7} ; Total RS :: ${this.count7 * 85}`);
 
     this.itemsselect++;
+    this.iteamcount = this.count7;
+    this.total = this.count7*85;
 
     this.count7 = 0;
 

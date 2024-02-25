@@ -58,17 +58,64 @@ body
 .imagefororder
 {
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .imagefororder img
 {
     width: 45px;
     height: 45px;
-    border-radius: 20px;   
+    border-radius: 20px;
+       
 }
+
 .imagefororder span
 {
     font-size: larger;
     font-weight: 1000;
     padding-top: 20px;
+}
+
+.subitems li
+{
+    list-style: none;
+}
+.subitems a
+{
+    text-decoration: none;
+    transition: transform .4s;
+    color: white;
+
+
+}
+.subitems
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+    padding-left: 0px;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    font:bolder;
+    font-size: 18px;
+    
+}
+li:hover  ul.subitems
+{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+    transform: scale(1.2);
+    
+}
+.subitems li
+{
+    float: none;
+    width: 130px;
+    background-color: rgb(25, 25, 97);
+    
 }

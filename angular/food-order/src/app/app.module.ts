@@ -12,6 +12,7 @@ import { FoodTiffinsComponent } from './food-tiffins/food-tiffins.component';
 import { FoodBiryanisComponent } from './food-biryanis/food-biryanis.component';
 import { FoodIceComponent } from './food-ice/food-ice.component';
 import { FoodChineeseComponent } from './food-chineese/food-chineese.component';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 @NgModule({
   declarations: [
