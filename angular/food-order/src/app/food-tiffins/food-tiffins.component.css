@@ -58,3 +58,11 @@
 {
     text-align: center;
 }
+
+.bigimgs
+{
+    width: 150px;
+    height: 155px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}

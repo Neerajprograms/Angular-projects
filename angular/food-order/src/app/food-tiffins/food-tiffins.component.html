@@ -19,9 +19,9 @@
     <div id="mainitembody">
       <div id="inneriteamsbody">
         <div class="item">
-          <img src="{{ imgdosa }}" alt="" />
+          <img src="{{imgdosa }}" alt="" />
           <br />
-          <h6 class="itemtitle">{{ dosatitle }}</h6>
+          <h6 class="itemtitle">{{dosatitle }}</h6>
 
           <div class="price">
             <p class="itemprice">{{ priceD }}</p>
@@ -151,11 +151,11 @@
         </div>
         <!--------------------------------------------------------------------------------------------->
         <div class="item">
-          <img src="{{ samosa }}" alt="" />
+          <img src="{{samosa }}" alt="" />
           <br />
-          <h6 class="itemtitle">{{ samosatitle }}</h6>
+          <h6 class="itemtitle">{{samosatitle }}</h6>
           <div class="price">
-            <p class="itemprice">{{ priceS }}</p>
+            <p class="itemprice">{{priceS }}</p>
 
             <div class="count">
               <button class="btn btn-outline-danger pluse" (click)="decr2()">
@@ -252,7 +252,7 @@
           <div class="order">
             <button
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#MasalaPuri"
               class="btn btn-outline-primary"
               (click)="add3()"
             >
@@ -262,7 +262,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="staticBackdrop"
+              id="MasalaPuri"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
               tabindex="-1"
@@ -310,7 +310,7 @@
         <div class="item">
           <img src="{{ IDLI }}" alt="" />
           <br />
-          <h6 class="itemtitle">{{ IDLITITLE }}</h6>
+          <h6 class="itemtitle">{{ idlititle }}</h6>
 
           <div class="price">
             <p class="itemprice">{{ PriceI }}</p>
@@ -331,7 +331,7 @@
           <div class="order">
             <button
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#idlititle"
               class="btn btn-outline-primary"
               (click)="add4()"
             >
@@ -341,7 +341,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="staticBackdrop"
+              id="idlititle"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
               tabindex="-1"
@@ -362,7 +362,7 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <span>Your Added Item :: </span> <span>{{IDLITITLE}}</span>
+                    <span>Your Added Item :: </span> <span>{{idlititle}}</span>
                     <br>
                     <span>Quantity :: </span> <span>{{iteamcount}}</span>
                     <br>
@@ -410,7 +410,7 @@
           <div class="order">
             <button
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#TEA"
               class="btn btn-outline-primary"
               (click)="add5()"
             >
@@ -420,7 +420,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="staticBackdrop"
+              id="TEA"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
               tabindex="-1"
@@ -466,12 +466,12 @@
         </div>
         <!-------------------------------------------------------------------------------------------------------->
         <div class="item">
-          <img src="{{ imgdosa }}" alt="" />
+          <img class="bigimgs" src="{{ plaindosaimage }}" alt="" />
           <br />
           <h6 class="itemtitle">{{ plaindosatitle }}</h6>
 
           <div class="price">
-            <p class="itemprice">{{ priceD }}</p>
+            <p class="itemprice">{{ priceplandosa }}</p>
 
             <div class="count">
               <button class="btn btn-outline-danger pluse" (click)="decr6()">
@@ -489,7 +489,7 @@
           <div class="order">
             <button
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#PlainDosa"
               class="btn btn-outline-primary"
               (click)="add6()"
             >
@@ -499,7 +499,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="staticBackdrop"
+              id="PlainDosa"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
               tabindex="-1"
@@ -568,7 +568,7 @@
           <div class="order">
             <button
               data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#SandWich"
               class="btn btn-outline-primary"
               (click)="add7()"
             >
@@ -578,7 +578,7 @@
             <!-- Modal -->
             <div
               class="modal fade"
-              id="staticBackdrop"
+              id="SandWich"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
               tabindex="-1"

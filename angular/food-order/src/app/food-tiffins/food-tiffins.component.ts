@@ -1,4 +1,5 @@
 import { Component ,Output} from '@angular/core';
+import {OrdersService} from '../orders.service';
 
 @Component({
   selector: 'app-food-tiffins',
@@ -6,7 +7,14 @@ import { Component ,Output} from '@angular/core';
   styleUrl: './food-tiffins.component.css'
 })
 export class FoodTiffinsComponent {
+  
+  ordercount = 0;
 
+
+  constructor(public send:OrdersService){}
+
+  allitems:any[] = []
+  
 
   imgdosa = "https://lh3.googleusercontent.com/CYhFsTE8lQ7iiWywTLLlNYCRSXuQYlcEE17VBRMeZO0veGQfqspdwSFQOFltDrnL6fuNuSx3D9XbKVLQxE_ThEGSaa4u3pPe2ToB1Nw=w150-rw"
 
@@ -26,11 +34,11 @@ export class FoodTiffinsComponent {
 
   purititle = "Masala Puri"
 
-  PriceP = "₹50"
+  PriceP = "₹45"
 
 
   IDLI = "https://lh3.googleusercontent.com/q6tjaXpCQP91sP6GEYzCcBWkPKo3s1P_ZYbO9Y1Lcvwv28JnyoCDIozLWkgEUlqeA6evwMU1I_qpmeVkXjyRgsGi0f8XkWxMzyjcR83Q=w150-rw"
-  IDLITITLE = "IDLI"
+  idlititle = "IDLI"
   PriceI = "₹30"
 
   TEA = "https://lh3.googleusercontent.com/zQx049Xd6QmM5NIAC2OXDEoMg22UByiSrbAQWgN5BmdavwAdUI83MO8P5bvX9WeG1-v1idD15s5xonByJcKQOZBBcE6HcdgLMy-8x87bSg=w150-rw"
@@ -43,6 +51,8 @@ export class FoodTiffinsComponent {
   PriceS = "₹55"
 
   plaindosatitle = "Plain Dosa"
+  plaindosaimage = "https://img-global.cpcdn.com/recipes/9fb02d4c10080154/400x400cq70/photo.jpg";
+  priceplandosa = "₹30";
 
   Total = 0;
 
@@ -56,7 +66,7 @@ export class FoodTiffinsComponent {
 
   iteamcount = 0;
 
-  additem = true;
+
 
   decr1()
   {
@@ -203,7 +213,7 @@ export class FoodTiffinsComponent {
     
     // alert(`Your Order added, Your Item ${this.dosatitle} quantity : ${this.count1} Total RS ${this.count1 * 40}`);
 
-    this.additem = true;
+    this.ordercount++;
 
     this.itemsselect++;
 
@@ -212,11 +222,11 @@ export class FoodTiffinsComponent {
     this.Total = this.count1*40;
 
     this.count1 = 0;
+  
+    this.send.sendData(this.ordercount);
 
-    this.iteamcount = 0;
-    
-    this.Total = 0;
-    
+    console.log(this.ordercount);
+
     }
     
   }
@@ -241,6 +251,8 @@ export class FoodTiffinsComponent {
 
     this.count2 = 0;
 
+    this.ordercount ++;
+
     }
   }
 
@@ -260,9 +272,11 @@ export class FoodTiffinsComponent {
 
     this.iteamcount = this.count3;  
 
-    this.Total = this.count3*50;
+    this.Total = this.count3*45;
 
     this.count3 = 0;
+
+    this.ordercount ++;
 
     }
   }
@@ -287,6 +301,8 @@ export class FoodTiffinsComponent {
 
     this.count4 = 0;
 
+    this.ordercount ++;
+
     }
   }
 
@@ -308,6 +324,8 @@ export class FoodTiffinsComponent {
 
     this.count5 = 0;
 
+    this.ordercount ++;
+
     }
   }
 
@@ -327,9 +345,11 @@ export class FoodTiffinsComponent {
 
     this.iteamcount = this.count6;  
 
-    this.Total = this.count6*40;
+    this.Total = this.count6*30;
 
     this.count6 = 0;
+
+    this.ordercount ++;
 
     }
   }
@@ -353,6 +373,8 @@ export class FoodTiffinsComponent {
     this.Total = this.count7*55;
 
     this.count7 = 0;
+
+    this.ordercount ++;
 
     }
   }
