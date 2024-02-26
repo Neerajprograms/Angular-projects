@@ -1,0 +1,24 @@
+{
+  "places": [
+    {
+        "id": "1",
+        "title": "Taj Mahal",
+        "video": "https://cdnl.iconscout.com/lottie/premium/preview-watermark/taj-mahal-6113726-5001424.mp4"
+      },
+      {
+        "id": "2",
+        "title": "Eiffel Tower",
+        "video": "https://cdnl.iconscout.com/lottie/premium/preview-watermark/paris-city-3916273-3263004.mp4"
+      },
+      {
+        "id": "3",
+        "title": "Lotus Temple",
+        "video": "https://cdnl.iconscout.com/lottie/premium/preview-watermark/lotus-temple-8928569-8356159.mp4"
+      },
+      {
+        "id": "4",
+        "title": "India Gate",
+        "video": "https://cdnl.iconscout.com/lottie/premium/preview-watermark/india-gate-8928568-8356158.mp4"
+      }
+  ]
+}

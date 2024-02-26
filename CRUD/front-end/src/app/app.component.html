@@ -1,0 +1,17 @@
+<h1>CRUD APLICATIOIN</h1>
+
+<div class="adding">
+  <button>Add Video</button>
+</div>
+
+<div class="main">
+  <div class="inneritem" *ngFor="let p of product">
+    <video src={{p.video}} height controls loop autoplay></video>
+    <h4>{{p.title}}</h4>
+    <div class="bottons">
+      <button class="btn">Update</button>
+      <button class="btn" (click)="remove(p.id)">Delete</button>
+    </div>
+  </div>
+</div>
+

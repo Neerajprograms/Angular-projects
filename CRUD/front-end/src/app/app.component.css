@@ -1,0 +1,33 @@
+.main
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+
+}
+
+.inneritem
+{
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+video
+{
+    width: 300px;
+    height: 200px
+}
+.bottons
+{
+    display: flex;
+    gap: 20px;
+}
+button
+{
+    background-color: black;
+    color: white;
+}
