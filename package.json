@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "@angular/fire": "^17.0.1",
+    "@ionic/angular": "^7.7.3",
     "bootstrap": "^5.3.3",
+    "firebase": "^10.8.1",
+    "ng": "^0.0.0",
     "typescript": "^5.3.3"
   }
 }

@@ -1,7 +1,15 @@
+body
+{
+    display: flex;
+    height: 380px;
+
+}
 .site-footer
 {
     background-color: rgb(25, 25, 97);
-    height: 350px;
+    display: flex;
+    width: 3000px;
+
 }
 .innermain
 {
@@ -11,7 +19,7 @@
 {
     color: rgb(223, 85, 165);
     font-size: larger;
-    font-weight: 800;
+    font-weight: 900;
 }
 .cretedukan a
 {
@@ -25,10 +33,23 @@ justify-content: space-between;
 .images
 {
    
-    width: 200px;
+    width: 230px;
     
 }
 .media-icon{
     
     margin: 10px;
+}
+.addrass
+{
+    height: 250px;
+}
+
+.contentaddrass
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
 }

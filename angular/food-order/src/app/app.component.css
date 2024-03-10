@@ -1,6 +1,8 @@
 body
 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .offers
@@ -22,4 +24,5 @@ body
 {
     font-weight: 1000;
     text-size-adjust: 40px;
+    display: flex;
 }

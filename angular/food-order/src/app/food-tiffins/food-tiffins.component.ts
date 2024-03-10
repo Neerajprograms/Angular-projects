@@ -199,6 +199,7 @@ export class FoodTiffinsComponent {
   /*addming funcaion*/
 
   itemsselect!:any;
+  number :any;
 
   add1()
   {
@@ -213,21 +214,21 @@ export class FoodTiffinsComponent {
     
     // alert(`Your Order added, Your Item ${this.dosatitle} quantity : ${this.count1} Total RS ${this.count1 * 40}`);
 
-    this.ordercount++;
+     this.ordercount++;
 
     this.itemsselect++;
 
     this.iteamcount = this.count1;  
 
     this.Total = this.count1*40;
-
     this.count1 = 0;
   
     this.send.sendData(this.ordercount);
-
     console.log(this.ordercount);
 
     }
+
+    this.ordercount = 0;
     
   }
 

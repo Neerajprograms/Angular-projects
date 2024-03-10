@@ -5,17 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class OrdersService {
 
-  ordercount = 0;
+  ordercount :any;
 
   constructor() { }
 
   sendData(data:any) 
   {
 
-    this.ordercount = data;
+    data = this.ordercount ;
   }
 
-  getData(): any 
+  getData()
   {
     return this.ordercount;
     
