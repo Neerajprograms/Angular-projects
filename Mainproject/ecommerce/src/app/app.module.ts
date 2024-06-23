@@ -9,6 +9,10 @@ import { MaterialModule } from './material/material.module';
 import { PagesModule } from './pages/pages.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 
 @NgModule({
@@ -16,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+
+
 
   ],
   imports: [
@@ -25,9 +31,15 @@ import { HttpClientModule } from '@angular/common/http';
     PagesModule,
     NgbModule,
     HttpClientModule,
+    ReactiveFormsModule
+    
+
+  
     
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

@@ -8,12 +8,14 @@
     border: 1px solid;
 
 }
-.main-navbar .top-navbar{
+.main-navbar .top-navbar
+{
     background-color: #050505;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.main-navbar .top-navbar .brand-name{
+.main-navbar .top-navbar .brand-name
+{
     color: #fff;
 }
 .main-navbar .top-navbar .nav-link{
@@ -47,7 +49,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .main-navbar .top-navbar .nav-link{
+    .main-navbar .top-navbar .nav-link
+    {
         font-size: 12px;
         padding: 8px 10px;
     }

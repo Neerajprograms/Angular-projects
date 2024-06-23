@@ -11,6 +11,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { CartComponent } from './cart/cart.component';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../../environments/environment';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +27,19 @@ import { RouterModule } from '@angular/router';
     ContactComponent, CartComponent,
     ProductComponent, ProductsComponent,
     NotfoundComponent, LoginComponent,
-    RegisterComponent,DashboardComponent
+    RegisterComponent,DashboardComponent,
+ 
   ],
   imports: [
     CommonModule,
-  RouterModule
+    RouterModule,
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    AngularFireModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment),
+  
   ],
 })
 export class PagesModule {}
