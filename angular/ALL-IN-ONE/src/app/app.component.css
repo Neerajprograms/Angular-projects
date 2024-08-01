@@ -1,0 +1,129 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 1400px
+  }
+
+.maincontentshow
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+   
+}
+.maincontant
+{
+    border: 1px solid;
+    border-radius: 20px;
+    width: 700px;
+    height: 500px;
+    background-color: burlywood;
+}
+.button-group
+{
+    gap: 30px;
+}
+button
+{
+    width: 200px;
+}
+
+.parentcontent
+{
+display: flex;
+align-items: center;
+height: 265px;
+background-color: rgb(247, 237, 107);
+border-radius: 0px 0px 20px 20px;
+}
+
+.welcommessage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 464px;
+    border-radius: 20px; 
+
+    margin: 0 0.5rem;
+    animation: bounce infinite; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+  .outputpatent
+  {
+    width: 550px;
+    height: 250px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .outputpatent2
+  {
+    width: 550px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .imgurl
+  {
+    width: 550px;
+    height: 220px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgurl img
+  {
+    width: 550px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputbox
+  {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .calculation
+  {
+    width: 260px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }

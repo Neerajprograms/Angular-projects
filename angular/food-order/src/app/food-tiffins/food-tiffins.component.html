@@ -1,0 +1,639 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="mainitembody">
+      <div id="inneriteamsbody">
+        <div class="item">
+          <img src="{{imgdosa }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{dosatitle }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ priceD }}</p>
+
+            <div class="count">
+              <button
+                type="button"
+                class="btn btn-outline-danger pluse"
+                (click)="decr1()"
+              >
+                <div
+                  class="toast align-items-center text-bg-primary border-0"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="d-flex">
+                    <div class="toast-body">
+                      Hello, world! This is a toast message.
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white me-2 m-auto"
+                      data-bs-dismiss="toast"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </div>
+                -
+              </button>
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div
+                  id="liveToast"
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="toast-header">
+                    <img src="..." class="rounded me-2" alt="..." />
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="toast-body">
+                    Hello, world! This is a toast message.
+                  </div>
+                </div>
+              </div>
+
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count1 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr1()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#Masaladosha"
+              class="btn btn-outline-primary"
+              (click)="add1()"
+              
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+            
+              class="modal fade"
+              id="Masaladosha"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Your Order
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <span>Your Added Item :: </span> <span>{{dosatitle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img src="{{samosa }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{samosatitle }}</h6>
+          <div class="price">
+            <p class="itemprice">{{priceS }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr2()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count2 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr2()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#Samosa"
+              class="btn btn-outline-primary"
+              (click)="add2()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Samosa"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{samosatitle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img src="{{ puri }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{ purititle }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ PriceP }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr3()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count3 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr3()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#MasalaPuri"
+              class="btn btn-outline-primary"
+              (click)="add3()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="MasalaPuri"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{purititle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img src="{{ IDLI }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{ idlititle }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ PriceI }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr4()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count4 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr4()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#idlititle"
+              class="btn btn-outline-primary"
+              (click)="add4()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="idlititle"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{idlititle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img src="{{ TEA }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{ TEATITLE }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ PriceT }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr5()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count5 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr5()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#TEA"
+              class="btn btn-outline-primary"
+              (click)="add5()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="TEA"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{TEATITLE}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img class="bigimgs" src="{{ plaindosaimage }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{ plaindosatitle }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ priceplandosa }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr6()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count6 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr6()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#PlainDosa"
+              class="btn btn-outline-primary"
+              (click)="add6()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="PlainDosa"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{plaindosatitle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------->
+        <div class="item">
+          <img src="{{ SandWich }}" alt="" />
+          <br />
+          <h6 class="itemtitle">{{ SandwichTitle }}</h6>
+
+          <div class="price">
+            <p class="itemprice">{{ PriceS }}</p>
+
+            <div class="count">
+              <button class="btn btn-outline-danger pluse" (click)="decr7()">
+                -
+              </button>
+              <div class="outernumbercount">
+                <p class="numbercount">{{ count7 }}</p>
+              </div>
+              <button class="btn btn-outline-success pluse" (click)="incr7()">
+                +
+              </button>
+            </div>
+          </div>
+          <br />
+          <div class="order">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#SandWich"
+              class="btn btn-outline-primary"
+              (click)="add7()"
+            >
+              ADD
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="SandWich"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <span>Your Added Item :: </span> <span>{{SandwichTitle}}</span>
+                    <br>
+                    <span>Quantity :: </span> <span>{{iteamcount}}</span>
+                    <br>
+                    <span>Total RS :: </span> <span>{{Total}}</span>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

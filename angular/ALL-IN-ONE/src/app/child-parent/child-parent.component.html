@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="mainbody">
+    <div class="childheader">
+        <h3>I'm Child</h3>
+    </div>
+
+    <div class="childcalculation">        
+    <input type="text" placeholder="Enter Your Image URL" class="input" #output>   
+    
+    <button class="btn btn-secondary" (click)="updateDataEvent.emit(output.value)">Send</button>
+
+    </div>
+
+</div>
+</body>
+</html>

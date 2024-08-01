@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+}
+#inneriteamsbody
+{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.price
+{
+    display: flex;
+    justify-content: space-between;
+}
+.itemprice
+{
+    padding-top: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.count
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.outernumbercount
+{
+    padding-top: 15px;
+    
+}
+.numbercount
+{
+    height: 20px;
+    width: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn
+{
+    font-size:small;
+}
+.pluse
+{
+    height: 20px;
+    width: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.itemtitle
+{
+    text-align: center;
+}
+
+.bigimgs
+{
+    width: 150px;
+    height: 155px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}

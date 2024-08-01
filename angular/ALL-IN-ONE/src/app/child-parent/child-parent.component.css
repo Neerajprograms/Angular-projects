@@ -1,0 +1,30 @@
+body{
+    border-radius: 20px;
+}
+.mainbody
+{
+    height: 200px;
+     background-color: rgb(228, 181, 228); 
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+}
+.childheader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.childcalculation
+{
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.input
+{
+    box-shadow: 5px 7px 9px;
+}
